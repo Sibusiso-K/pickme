@@ -1,11 +1,17 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
+const nextConfig: NextConfig = {
+  images: {
+    domains: ["your-supabase-project.supabase.co"], // if using Supabase images
   },
-  typescript: {
-    ignoreBuildErrors: true, // If you have TS errors too
+  // Ensure API routes work
+  async headers() {
+    return [
+      {
+        source: "/api/:path*",
+        headers: [{ key: "Access-Control-Allow-Origin", value: "*" }],
+      },
+    ];
   },
 };
 
