@@ -496,7 +496,7 @@ export default function Page() {
                     />
                     <div>
                       <div className="font-medium">Tier 1</div>
-                      <div className="text-sm text-gray-600">+10% savings</div>
+                      <div className="text-sm text-gray-600">R100 = 40% discount</div>
                     </div>
                   </label>
 
@@ -515,7 +515,7 @@ export default function Page() {
                     />
                     <div>
                       <div className="font-medium">Tier 2</div>
-                      <div className="text-sm text-gray-600">+20% savings</div>
+                      <div className="text-sm text-gray-600">R200 = 55% discount</div>
                     </div>
                   </label>
 
@@ -534,20 +534,28 @@ export default function Page() {
                     />
                     <div>
                       <div className="font-medium">Tier 3</div>
-                      <div className="text-sm text-gray-600">+30% savings</div>
+                      <div className="text-sm text-gray-600">R300 = 80% discount</div>
                     </div>
                   </label>
                 </div>
 
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm">
-                  <p className="font-medium text-blue-900 mb-2">Payment Instructions:</p>
-                  <p className="text-blue-800 mb-3">
-                    Please send proof of payment to our WhatsApp support or email after submitting
-                    this form. Banking details are provided below.
-                  </p>
-                  <div className="space-y-1 text-blue-900">
-                    <p><strong>WhatsApp:</strong> 069 757 4778</p>
-                    <p><strong>Email:</strong> support@pikme.co.za</p>
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm space-y-3">
+                  <div>
+                    <p className="font-medium text-blue-900 mb-2">Payment Instructions:</p>
+                    <p className="text-blue-800 mb-2">
+                      Please send proof of payment to our WhatsApp support or email after submitting
+                      this form. Banking details are provided below.
+                    </p>
+                    <div className="space-y-1 text-blue-900">
+                      <p><strong>WhatsApp:</strong> 069 757 4778</p>
+                      <p><strong>Email:</strong> support@pikme.co.za</p>
+                    </div>
+                  </div>
+                  <div className="pt-3 border-t border-blue-200">
+                    <p className="text-xs text-blue-800">
+                      <strong>Important:</strong> Subscription discounts are valid for 3 months upon launch. 
+                      Once proof of payment is received, Pikme will send you a documented receipt of transaction.
+                    </p>
                   </div>
                 </div>
               </div>
