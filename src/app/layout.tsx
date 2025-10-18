@@ -17,9 +17,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen bg-background text-foreground antialiased">
         <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-transparent backdrop-blur-sm">
-          <div className="mx-auto flex h-14 max-w-6xl items-center px-4">
+          <div className="mx-auto flex h-16 max-w-6xl items-center px-4">
             <a href="/" aria-label="Pikme (Pty) Ltd">
-              <img src="/pikmelogo.jpg" alt="Pikme (Pty) Ltd logo" className="h-9 w-auto" height={36} />
+              <img src="/pikmelogo.jpg" alt="Pikme (Pty) Ltd logo" className="h-14 w-auto" height={56} />
             </a>
           </div>
         </header>
