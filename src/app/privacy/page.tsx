@@ -33,8 +33,8 @@ export default function PrivacyPage() {
               We process your personal information for the following purposes:
             </p>
             <ul className="list-disc pl-6 space-y-1 text-white">
-              <li>Verifying your eligibility to drive for Pikme</li>
-              <li>Managing your participation in our e-hailing platform</li>
+              <li>Verifying your eligibility to drive</li>
+              <li>Managing your participation with Pikme under the National Land and Transportation Act (NLTA)</li>
               <li>Communicating with you about your onboarding status</li>
               <li>Complying with legal and regulatory requirements</li>
               <li>Processing investment program applications (if applicable)</li>
