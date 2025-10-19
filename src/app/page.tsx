@@ -465,7 +465,7 @@ export default function Page() {
           {/* Investment Program */}
           <section className="bg-white rounded-lg shadow-sm border p-6 space-y-4">
             <h2 className="text-xl font-semibold text-gray-900">
-              Pikme Driver Transition Investment Program
+              Pikme Driver Transition Program
             </h2>
             <p className="text-sm text-gray-600">
               Would you like to participate in our optional investment program?
