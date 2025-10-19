@@ -15,6 +15,7 @@ const FormSchema = z.object({
   full_name: z.string().min(2, "Required"),
   email: z.string().email("Invalid email"),
   phone: z.string().min(10, "Phone number must be at least 10 digits"),
+  regional_work_location: z.string().min(2, "Required"),
   role: z.enum(["owner", "driver", "both"]),
   vin: z.string().min(5, "VIN must be at least 5 characters"),
   number_plate: z.string().min(2, "Required"),
@@ -286,6 +287,20 @@ export default function Page() {
                   <option value="driver">Driver</option>
                   <option value="both">Both</option>
                 </select>
+              </div>
+
+              <div className="md:col-span-2">
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Regional work location *
+                </label>
+                <input
+                  className="w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder:text-gray-400 focus:border-black focus:ring-1 focus:ring-black"
+                  placeholder="e.g. Johannesburg, Cape Town"
+                  {...register("regional_work_location")}
+                />
+                {errors.regional_work_location && (
+                  <p className="text-sm text-red-600 mt-1">{errors.regional_work_location.message}</p>
+                )}
               </div>
             </div>
           </section>
@@ -660,7 +675,7 @@ export default function Page() {
             </a>
             .
           </p>
-        </form>hduol
+        </form>
 
         <footer className="mt-12 text-center text-xs text-gray-500">
           © {new Date().getFullYear()} Pikme (Pty) Ltd. All rights reserved.
