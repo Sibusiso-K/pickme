@@ -108,7 +108,7 @@ export default function PAIAPage() {
               <p className="text-white/90 mt-3">
                 Requests can be submitted via:
               </p>
-              <ul className="list-disc pl-6 space-y-1 text-white/90">
+              <ul className="list-disc pl-6 space-y-1 text-white/90 mt-2">
                 <li>Email: support@pikme.co.za</li>
                 <li>WhatsApp: 069 757 4778</li>
               </ul>
@@ -134,7 +134,7 @@ export default function PAIAPage() {
               <p className="text-white/90 mt-2">
                 Additional fees may apply for:
               </p>
-              <ul className="list-disc pl-6 space-y-1 text-white/90">
+              <ul className="list-disc pl-6 space-y-1 text-white/90 mt-2">
                 <li>Photocopying and printing</li>
                 <li>Preparation time</li>
                 <li>Postal or electronic delivery</li>
